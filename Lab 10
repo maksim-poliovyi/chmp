@@ -1,0 +1,18 @@
+Import sympy as sp 
+From math import factorial 
+Import numpy as np 
+Import math 
+Def taylor(x): 
+ Y = 0 
+ D1 = sp.diff(f, x) 
+ D2 = sp.diff(d1, x) 
+ D3 = sp.diff(d2, x) 
+ Print(‘d1=’,d1,’d2=’,d2,’d3=’,d3) 
+ Y += f + d1*x + d2*(x-0)**2/factorial(2) + d3*(x-0)**3/factorial(3) 
+ Print (‘y = ‘, y) 
+ Return y 
+X = sp.symbols(‘x’) 
+F = sp.cos(3*x) – 3*x + 3
+Taylor_x = taylor(x) 
+Sp.plot(taylor_x, f, (x, -1, 1), label=’Taylor’)
+Print(f)
