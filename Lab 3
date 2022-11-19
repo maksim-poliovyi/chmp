@@ -1,0 +1,24 @@
+import numpy as np 
+import math
+from scipy.misc import derivative
+def f(x):
+    return 4 pow(x,4) +4 pow(x, 3) 6 pow(x,2) - 9*x - 1
+
+a-3/4 
+b=5
+
+eps = 0.001
+def nuton(a,b,eps):
+    df2 derivative(f, b, n = 2)
+    if (f(b) df2>0): 
+        xi = b
+    else:
+         xi = a
+       
+    df derivative(f,xi, n= 1)
+    xi_1 = xi- f(x)/df
+    while (abs(xi 1 xi) eps): accuracy check
+        xi = xl 
+        xi_1 = xi - f(xi)/df
+    return print('Solving the equation by Newton's method x, xi_1)
+nuton(a,b,eps)
