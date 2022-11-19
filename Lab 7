@@ -1,0 +1,42 @@
+import numpy as np
+import math
+mas x = [2.4,2.6,2.8, 3.0, 3.2,3.4]
+mas_y = [3.526, 3.782,3.945,4.043,4.104,4.155]
+h = mas x[1] - mas_x[0] 
+print (h', h)
+mas 1 = []
+mas 2 = []
+mas 3 = []
+mas 4 = []
+mas 5 = []
+for i in range(len (mas_y)):
+    mas_1.append(mas_y[i] - mas_yli-1])
+mas 1.pop (0)
+print('Ayi = '; mas_1)
+TO
+for j in range (len (mas 1)):
+    mas 2.append(mas_1[j] mas_1[j-1])
+mas_2.pop(0)
+print('A^2yi-, mas 2)
+
+for k in range (len (mas_2));
+    mas 3.append(mas_2[k] mas 2[k-11)
+mas 3.pop (0)
+print('A 3yi=',mas_3)
+
+for 1 in range (len (mas 3)):
+    mas 4.append(mas_3[1] mas 3[1-1])
+mas 4.pop (0)
+print ("A"4y=',mas_4)
+
+for o in range (len (mas 4));
+    mas 5.append(mas_4[o] mas_4 [0-1])
+mas 5.pop (0)
+print('A Syl=',mas_5)
+
+yl = 1/h (mas_1[1] (mas_2[11/ 2) + (mas_3[1] /3)
+y2 = 1/ (h2) * (mas 2[1] - mas_3[1] 11/12*mas 4[1]) (mas_4[1]/4))
+
+print ('Значення першої похідної =', y1)
+
+print ('Значення другої похідної =', y2)
