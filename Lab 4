@@ -1,0 +1,77 @@
+1)
+import numpy as np
+a= np.matrix('7 15; 0 7 12;0 0 7')
+b = np.matrix('7 15 15; 0 12 12; 0 7 7')
+c = a - b
+print(c)
+2)
+import numpy as np
+a= np.matrix('3 5; 6 -1')
+b = np.matrix('2 1; -3 2') 
+c a.dot(b)
+print(c)
+3)
+import numpy as np
+a = np.matrix('2 3 4; 1 0 6; 7 8 9')
+a_det = np.linalg.det(a)
+print(format(a_det, .9g'))
+4)
+import numpy as np
+a= np.matrix('2 3 4 1; 1 2 3 4; 12; 4123)
+a_det = np.linalg.det(a) 
+print(format(a_det,' .9g'))
+5)
+import numpy as np
+A= np.matrix('1 2 -3; 0 1 2; 0 0 1 )
+A_inv np.linalg.inv(A) 
+print(A_inv)
+6)
+import numpy as np
+A= np.matrix('1 2 3 4; 3-1 2 5; 1 234; 13 45') 
+rank = np.linalg.matrix_rank(A)
+print(rank)
+8)
+import numpy as np
+a = np.matrix('14 4 6; 5 -3 2; 10-11 5')
+print('A=',a)
+b = np.matrix('30; 15; 36 )
+print('B',b
+
+def kramer(a,b):
+    a_det np.linalg.det(a)
+    print('Детермінант матриці = ', a_det)
+
+    if (a_det != 0):
+        print ('Розв*язуємо систему')
+        x_m = np.matrix(a)
+        x_m[:, 0] b
+        print('x_m=', x_m)
+        y_m= np.matrix(a)
+        y_m[:, 1] b
+        print("y_my_m)
+
+        z_m = np.matrix(a)
+        z_m[:, 2] = b
+        print('z_m=',z_m)
+        x np.linalg.det(x_m)/ a_det
+        y= np.linalg.det(y_m) / a_det
+        z= np.linalg.det (z_m)/ a_det Z=
+        print('X = ' round(x,5))
+
+        print('Y = ', round(y,5))
+
+        print('Z = ', round(2,5))
+    else:
+        print( 'Розв*язків немає' )
+kramer(a,b)
+X = np. linalg.solve(a, b)
+print('Пepeвipka X=,X)
+8)
+import numpy as np
+a= np.matrix('14 4 -11 5')
+print('A=, a)
+print('B',b)
+a_inv np.linalg.inv(a)
+print(a_inv)
+x= a inv.dot (b)
+print('X,x)
